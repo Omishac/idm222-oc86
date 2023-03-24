@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E1D1E7;
+    background: url(./pictures/backgroundcopy.png)
+}
+
+nav{
+    background-color:#E2D3E9;
+    height: 90px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 0px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 55px;
+}
+
+nav ul li a{
+    color: #c175dc;
+    text-decoration: none;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+   
+}
+
+label.logo{
+    line-height: 125px;
+    padding: 0 100px;
+    
+}
+
+.checkButton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.myCheckBox{
+    display: none;
+}
+
+a:hover,a.active{
+    color: #532563;
+}
+
+.home{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.philly-img{
+    width: 300px;
+    padding: 50px 0px;
+
+}
+
+h1{ 
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+h3{
+    text-align: center;
+    word-spacing: 10px;
+    padding: 7px 0px;
+    font-size: 25px;
+    margin-bottom: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+mark.purple{
+    color: #BA83F0;
+    background: none;
+    font-size: 25px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    color: white;
+    border-top: 1px solid black;
+  }
+
+.connect{
+     word-spacing: 20px;
+     margin: 10px 0px;
+}
+
+a {
+    color: black;
+
+}
+
+
+@media screen and (max-width:952px) {
+    label.logo{
+        padding-left: 10px;
+        width: 10px;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width:858px) {
+    .checkButton{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #E1D1E7;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: #B35CD3;
+    }
+
+    a:hover,a.active{
+        color: #532563;
+    }
+
+    .myCheckBox:checked ~ ul{
+        left: 0;
+    }
+    h3{
+        text-align: center;
+        word-spacing: 10px;
+        padding: 4px 0px;
+        font-size: 22px;
+        margin-bottom: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+}
+@media screen and (max-width:376px) {
+    label.logo{
+        padding-left: 10px;
+        width: 10px;
+        position: absolute;
+    }
+    .philly-img{
+        width: 200px;
+        padding: 50px 0px;
+    
+    }
+    
+    h1{ 
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        padding: auto;
+    }
+    
+    
+    h3{
+        text-align: center;
+        word-spacing: 10px;
+        padding: 45px 0px;
+        font-size: 17px;
+        margin-bottom: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    mark.purple{
+        color: #BA83F0;
+        background: none;
+        font-size: 17px;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+
+}
+
+
